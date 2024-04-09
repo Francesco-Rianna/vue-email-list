@@ -4,15 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
-    <!-- FRAME VUEJS -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
     <title>email-list</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 </head>
 
 <body>
-
+    <div id="app">
+        <ul v-if="myEmailArray.length===10">
+            <li v-for="email in myEmailArray">{{email}}</li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
